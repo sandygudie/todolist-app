@@ -14,7 +14,7 @@ function buttonclick(task){
     ul.appendChild(li)
     //TO CLEAR THE INPUTBOX
     input.value = ""
-    document.querySelector("#usertasks").style.display="block";
+    document.querySelector("ul").style.display="block";
 
 }
 
@@ -26,7 +26,7 @@ function textlength(){
 
 function clearlist(e){
     ul.innerHTML = ''
-    document.querySelector("#usertasks").style.display="none";
+    document.querySelector("ul").style.display="none";
     
 }
 
@@ -77,5 +77,8 @@ function ticktask(e){
 button.addEventListener("click", textlength)
 span.addEventListener("click", clearlist)
 ul.addEventListener("click", deleteOrOrEditOrTick)
+
+
+
 
 
